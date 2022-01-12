@@ -1,0 +1,27 @@
+{
+  "name": "cafetimegulp",
+  "version": "1.0.0",
+  "description": "Cafe Time Sass Gulp",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "Natalia Araya",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.2"
+  },
+  "browserslist": [
+    "IE 10",
+    "last 1 version",
+    "> 1%"
+  ]
+}

@@ -1,0 +1,20 @@
+@use "variables" as v;
+// Código reutilizable
+
+@mixin movil {
+@media(min-width: v.$movil) {
+@content;
+}
+}
+
+@mixin tablet {
+@media(min-width: v.$tablet) {
+@content;
+}
+}
+
+@mixin desktop {
+@media(min-width: v.$desktop) {
+@content;
+}
+}

@@ -1,0 +1,26 @@
+@use "base";
+@use "header";
+
+
+
+/*
+@use si compila
+@forward no compila
+*/
+
+
+
+/*$color: lightblue;
+$colorText: tomato;
+
+body {
+  background-color: $color;
+  color: $colorText
+}
+.contenido{
+  color: blue;
+}
+
+.nav{
+ display: flex;
+}*/
