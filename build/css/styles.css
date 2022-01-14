@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Para nuestras fuentes, son las sgtes:*/
 /*fontmain
 fontsecondary
@@ -362,10 +363,13 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  background-color: #ebe7de;
 }
 
 p {
   color: #000;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 .container {
@@ -434,6 +438,36 @@ ul {
   background-image: url(../img/header_inicio.webp);
 }
 
+.nav-primary {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-top: 5rem;
+  /*en resoluciones suo a 780px aplicará este mixin*/
+}
+@media (min-width: 768px) {
+  .nav-primary {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    gap: 1rem;
+    margin-top: 1.4rem;
+  }
+}
+.nav-primary a {
+  text-align: center;
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.nav-primary a:hover {
+  color: #C39C63;
+}
+.nav-primary a.actived {
+  color: #C39C63;
+}
+
 .nav-barra {
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +482,47 @@ ul {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
+  }
+}
+.nav-barra .logo {
+  font-size: 5rem;
+  font-family: "Pacifico", sans-serif;
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-begin {
+  padding: 5rem 2rem;
+  background-color: #FFF;
+}
+@media (min-width: 768px) {
+  .container-begin {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
+  }
+}
+
+.icons {
+  margin-top: 5rem;
+}
+.icons .list-icons li img {
+  margin: 0 auto;
+  width: 12rem;
+}
+.icons .list-icons li p {
+  font-family: "Pacifico", sans-serif;
+  font-size: 3.2rem;
+  color: #5E311E;
+}
+@media (min-width: 768px) {
+  .icons .list-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
   }
 }
 
